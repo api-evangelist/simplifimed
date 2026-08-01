@@ -1,7 +1,25 @@
 aid: simplifimed
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/simplifimed.png
 name: SimplifiMed
-description: SimplifiMed is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: SimplifiMed is a healthcare technology company that provides an AI-powered
+  virtual assistant for medical and physician practices, automating patient communication
+  and front-office administrative workflows such as messaging, appointment scheduling,
+  and intake in order to reduce staff workload and streamline clinic operations. It
+  is an early-stage company backed by 500 Global. During enrichment no public API,
+  developer portal, documentation, SDKs, or GitHub organization were discoverable; the
+  marketing site is served behind a bot-challenge wall, so only infrastructure-level
+  security signals could be probed.
 url: https://raw.githubusercontent.com/api-evangelist/simplifimed/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Health
+- Medical
+- Artificial Intelligence
+- Patient Communication
+- Practice Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/simplifimed-domain-security.yml
 - type: Website
   url: https://simplifimed.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
